@@ -7,7 +7,7 @@ export const PokemonCardComponent = ({index, title, path = "/#"}) => {
     const classes = styles();
 
     return (
-        <Link to={path} className={classes.linkContainer}>
+        <Link to={`/pokemon/${title}`} className={classes.linkContainer}>
             <Card>
                 <img src={`/model/${index}.png`} alt={title}/>
                 <Typography className={classes.title}>

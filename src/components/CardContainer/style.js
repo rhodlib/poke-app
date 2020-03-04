@@ -7,18 +7,22 @@ const centeredStyleObj = {
 };
 
 export default makeStyles({
-  container: {
+  containerBig: {
     height: "100vh",
     flexDirection: "column",
     ...centeredStyleObj,
-  
+  },
+  containerSmall: {
+    height: "100vh",
+    flexDirection: "column",
+    ...centeredStyleObj,
+    maxWidth: "400px",
   },
   cardContainer: {
     width: "80%",
     padding: "2rem",
     ...centeredStyleObj,
     flexWrap: 'wrap',
-    overflow: 'scroll'
   }
 
 });

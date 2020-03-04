@@ -11,7 +11,7 @@ export const PokemonList = () => {
   const pokemons = useSelector(state => pokemonsResult(state));
 
   useEffect(() => {
-    dispatch(getPokemons("pokemon"));
+    dispatch(getPokemons());
   }, [dispatch]);
 
   const renderPkmns = () => {
