@@ -19,11 +19,14 @@ export const PokemonList = () => {
       <CircularProgress size={100} color="primary" />
     ) : (
       pokemons.map((value, index) => (
-        <PokemonCardComponent key={index} title={value.name} index={index+1} />
+        <PokemonCardComponent
+          key={index}
+          title={value.name}
+          index={index + 1}
+        />
       ))
     );
   };
-  console.log(pokemons);
 
   return <CardContainer>{renderPkmns()}</CardContainer>;
 };
