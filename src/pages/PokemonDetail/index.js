@@ -13,7 +13,7 @@ export const PokemonDetail = ({ match }) => {
   useEffect(() => {
     const param = match.params.name;
     dispatch(getPokemonData(param));
-  }, [dispatch]);
+  }, [dispatch, match]);
 
   const renderPokemonInfo = () => {
     return pokemon === undefined ? (

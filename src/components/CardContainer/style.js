@@ -20,9 +20,9 @@ export default makeStyles({
   },
   cardContainer: {
     width: "80%",
-    padding: "2rem",
+    padding: "1rem",
     ...centeredStyleObj,
     flexWrap: 'wrap',
+    overflow: "auto"
   }
-
 });
