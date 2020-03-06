@@ -5,7 +5,7 @@ import {
   GET_POKEMON_DATA_START,
   GET_POKEMON_DATA_COMPLETE,
   GET_POKEMON_DATA_ERROR
-} from "../../constants/actionTypes";
+} from "../constants/actionTypes";
 
 const initialState = {};
 

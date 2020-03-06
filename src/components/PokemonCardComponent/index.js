@@ -8,8 +8,8 @@ export const PokemonCardComponent = ({ index, title }) => {
 
   return (
     <Link to={`/pokemon/${title}`} className={classes.linkContainer}>
-      <Card>
-        <img src={`/model/${index}.png`} alt={title} />
+      <Card className={classes.cardContainer}>
+        <img src={`/model/${index}.png`} alt={title} className={classes.imagePkmCard} />
         <Typography className={classes.title}>
           {`#${index} - ${title}`}
         </Typography>

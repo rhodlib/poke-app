@@ -14,7 +14,13 @@ export const AbilitiesComponent = ({ abilities = [] }) => {
   return (
     <>
       {abilities.map((ability, index) => (
-        <Button key={index} className={classes.buttonAbility} variant="outlined">{ability.ability.name}</Button>
+        <Button
+          key={index}
+          className={classes.buttonAbility}
+          variant="outlined"
+        >
+          {ability.ability.name}
+        </Button>
       ))}
     </>
   );

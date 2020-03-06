@@ -1,9 +1,16 @@
 import React from "react";
 import { TableRow, TableCell, Button, Typography } from "@material-ui/core";
 import styles from "./style";
+import { withRouter } from "react-router";
 
-export const BerriesTableComponent = ({ berries = [] }) => {
+export const BerriesTableComponent = ({ berries = [], history }) => {
   const classes = styles();
+  console.log(history);
+
+  const handleClickBerryPage = id => {
+    history.push(`/berry/${id}`);
+  };
+
   return (
     <>
       {berries.map((berry, index) => {
@@ -24,6 +31,7 @@ export const BerriesTableComponent = ({ berries = [] }) => {
                 variant="outlined"
                 color="secondary"
                 className={classes.capitalizeCss}
+                onClick={() => handleClickBerryPage(`${berry.name}-berry`)}
               >
                 >
               </Button>
@@ -35,4 +43,4 @@ export const BerriesTableComponent = ({ berries = [] }) => {
   );
 };
 
-export default BerriesTableComponent;
+export default withRouter(BerriesTableComponent);

@@ -1,12 +1,18 @@
 import React from "react";
-import { Typography, Grid } from "@material-ui/core";
+import { Typography, Grid, Button } from "@material-ui/core";
 import styles from "./style";
 import TypeComponent from "../TypeComponent";
 import AbilitiesComponent from "../AbilityComponent";
 import StatComponent from "../StatComponent";
+import { withRouter } from "react-router";
 
-export const PokemonDetailComponent = ({ pokemon }) => {
+export const PokemonDetailComponent = ({ pokemon, history }) => {
   const classes = styles();
+
+  const handleClickBack = () => {
+    history.push("/pokemons");
+  };
+
   return (
     <Grid container className={classes.gridContainer}>
       <Grid className={classes.imageAndName}>
@@ -24,8 +30,19 @@ export const PokemonDetailComponent = ({ pokemon }) => {
       <Grid>
         <StatComponent stats={pokemon.stats} />
       </Grid>
+      <Grid className={classes.backContainer}>
+        <hr />
+        <Button
+          variant="contained"
+          size="small"
+          color="secondary"
+          onClick={handleClickBack}
+        >
+          Back
+        </Button>
+      </Grid>
     </Grid>
   );
 };
 
-export default PokemonDetailComponent;
+export default withRouter(PokemonDetailComponent);

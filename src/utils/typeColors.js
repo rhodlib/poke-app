@@ -69,8 +69,7 @@ const typeColor = type => {
       };
     case "electric":
       return {
-        backgroundColor: yellow["A200"],
-        color: "white"
+        backgroundColor: yellow["A200"]
       };
     case "psychic":
       return {

@@ -6,7 +6,7 @@ import {
   GET_POKEMON_DATA_COMPLETE,
   GET_POKEMON_DATA_ERROR,
   GET_POKEMON_DATA_START
-} from "../../constants/actionTypes";
+} from "../constants/actionTypes";
 
 import { getPokemonsApiCall, getPokemonDataApiCall } from "../api";
 

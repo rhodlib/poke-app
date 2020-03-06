@@ -5,7 +5,7 @@ import {
   GET_BERRIES_COMPLETE,
   GET_BERRIES_ERROR,
   GET_BERRIES_START
-} from "../../constants/actionTypes";
+} from "../constants/actionTypes";
 
 function* getBerries() {
   try {
