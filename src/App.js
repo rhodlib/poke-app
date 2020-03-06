@@ -6,6 +6,7 @@ import store from "./redux/store";
 import PokemonList from "./pages/PokemonList";
 import PokemonDetail from './pages/PokemonDetail';
 import BerriesList from "./pages/BerriesList";
+import BerryDetail from "./pages/BerryDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/pokemons" component={PokemonList}/>
           <Route exact path="/pokemon/:name" component={PokemonDetail}/>
           <Route exact path="/berries" component={BerriesList}/>
+          <Route exact path="/berry/:name" component={BerryDetail}/>
         </Switch>
       </Router>
     </Provider>

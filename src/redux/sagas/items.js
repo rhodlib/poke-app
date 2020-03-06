@@ -7,7 +7,7 @@ import {
   GET_ITEM_BY_ID_START,
   GET_ITEM_BY_ID_ERROR,
   GET_ITEM_BY_ID_COMPLETE
-} from "../../constants/actionTypes";
+} from "../constants/actionTypes";
 
 function* getItems({ payload }) {
   try {

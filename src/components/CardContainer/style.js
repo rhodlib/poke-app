@@ -3,12 +3,12 @@ import { makeStyles } from "@material-ui/styles";
 const centeredStyleObj = {
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "center"
 };
 
 export default makeStyles({
   containerBig: {
-    height: "100vh",
+    height: "90vh",
     flexDirection: "column",
     ...centeredStyleObj,
   },
@@ -16,13 +16,14 @@ export default makeStyles({
     height: "100vh",
     flexDirection: "column",
     ...centeredStyleObj,
-    maxWidth: "400px",
+    maxWidth: "400px"
   },
   cardContainer: {
     width: "80%",
     padding: "1rem",
     ...centeredStyleObj,
-    flexWrap: 'wrap',
-    overflow: "auto"
+    flexWrap: "wrap",
+    overflow: "auto",
+    margin: '1rem',
   }
 });

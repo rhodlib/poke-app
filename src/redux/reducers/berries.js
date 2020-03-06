@@ -2,7 +2,7 @@ import {
   GET_BERRIES_START,
   GET_BERRIES_ERROR,
   GET_BERRIES_COMPLETE
-} from "../../constants/actionTypes";
+} from "../constants/actionTypes";
 
 const initialState = {};
 

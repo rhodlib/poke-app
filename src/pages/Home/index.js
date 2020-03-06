@@ -9,7 +9,7 @@ export const Home = () => {
   const classes = styles();
 
   return (
-    <CardContainer>
+    <CardContainer small>
       <Grid container className={classes.gridItemsContainer}>
         <Grid className={classes.gridTitleContainer}>
           <img className={classes.logoImage} src={assets.pokelogo} alt="logo" />
